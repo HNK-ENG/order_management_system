@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    /* color: rgb(36, 36, 36); */
+}
+
+body {
+    min-height: 100vh;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: max-content; 
+    padding: 1rem 0.5rem;
+}
+
+section {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+a, a:visited, a:hover, a:link {
+    color: rgb(216, 65, 65);
+    text-decoration: none;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  border-style: none;
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}
+
+/* .flexGrow {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+} */
+
+.sign{
+    justify-content: center;
+    max-width: 420px;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+
+.sign-up{
+    max-width: 600px;
+}
+
+.sign-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home{
+    width: 100%;
+}
+
+.filters{
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+}
+
+.filter-status{
+    margin-left: 1rem;
+}
+
+.filter-label{
+    display: flex;
+    margin: 0px 5px;
+    width: 10rem;
+    height: 2rem;
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 2rem 0;
+}
+
+.button-new-order{
+    margin-right: 10px;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-input{
+    margin-inline: 5px;
+    max-width: 150px;
+    background-color: rgb(224, 224, 224);
+}
+
+.item{
+    width: 100%;
+}
+
+.new{
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.Dispatched{
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+.success{
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+.cancel{
+    font-size: 0.75rem;
+    padding: 2px 10px;
+    border-radius: 10px;
+    background-color: red;
+}
